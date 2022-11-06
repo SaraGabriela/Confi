@@ -1,8 +1,9 @@
 import React,{useState, useEffect} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, Linking } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Linking, Image } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 const link = "https://confi-chat.vercel.app/";
+import logo from './img/logo.jpg';
 
 export default function App() {
 	const [data, setData] = useState([])
@@ -22,6 +23,7 @@ export default function App() {
       <StatusBar style="auto" />
 	  <Text style={styles.titulo}>CONFI</Text>
 		<AntDesign name="github" size={150} color="pink" />
+		<Image source={logo} style={{ width: 305, height: 159 }} />
 
 	  <Text style={styles.subTitle}>Iniciar sesión</Text>
 	  <TextInput 
