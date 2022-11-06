@@ -1,9 +1,9 @@
 import React,{useState, useEffect} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, Linking, Image } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Linking, Image, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 const link = "https://confi-chat.vercel.app/";
-import logo from './img/logo.jpg';
+import logo from './img/logo_final.PNG';
 
 export default function App() {
 	const [data, setData] = useState([])
@@ -21,28 +21,20 @@ export default function App() {
 
     <View style={styles.container}>
       <StatusBar style="auto" />
-	  <Text style={styles.titulo}>CONFI</Text>
 
-		<AntDesign name="github" size={150} color="pink" />
 		<Image source={logo} style={{ width: 305, height: 159 }} />
 
 
-	  <Text style={styles.subTitle}>Iniciar sesión</Text>
-	  <TextInput 
-	  placeholder="introduce@email.com"
-	  style={styles.textInput}
-	  />
-	  <TextInput
-	  placeholder="Introduce tu contraseña"
-	  style={styles.textInput}
-	  secureTextEntry={true}
-	  />
-
-	  <Button
-
-        title="Contact with Confi"
+	
+		<TouchableOpacity
+        style={styles.button}
         onPress={() =>  Linking.openURL(link)}
-      />
+      >
+        <Text style={styles.buttonTxt}>Contact with Confi</Text>
+		
+      </TouchableOpacity>
+	  <AntDesign name="qrcode" size={200} color="white" />
+
     </View>
 
   );
@@ -51,7 +43,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -74,9 +66,17 @@ const styles = StyleSheet.create({
 	backgroundColor: 'yellow',
 	marginBottom: 20,
   },
-  Button: {
+  button: {
 	padding: 20,
+	backgroundColor: '#E0F890',
+	
+	marginTop: 20,
+	cornerRadius: 10,
 
+  },
+  buttonTxt:{
+	fontWeight:'bold',
+	color: '#000',
   }
   
 });
