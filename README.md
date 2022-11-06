@@ -1,4 +1,4 @@
-# EthSF2022
+# CONFI
 
 This platform empowers people to use their voice to speak out about sexual harassement on college campuses. 
 
