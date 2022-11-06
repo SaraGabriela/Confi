@@ -1,0 +1,33 @@
+{
+  "name": "clave",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/html-elements": "^0.2.0",
+    "@rneui/base": "^4.0.0-rc.6",
+    "@rneui/themed": "^4.0.0-rc.6",
+    "expo": "~46.0.16",
+    "expo-image-picker": "~13.3.1",
+    "expo-linear-gradient": "~11.4.0",
+    "expo-linking": "~3.2.2",
+    "expo-status-bar": "~1.4.0",
+    "react": "18.0.0",
+    "react-native": "0.69.6",
+    "react-native-camera": "^4.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
