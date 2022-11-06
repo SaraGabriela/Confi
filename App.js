@@ -21,6 +21,8 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
 	  <Text style={styles.titulo}>CONFI</Text>
+		<AntDesign name="github" size={150} color="pink" />
+
 	  <Text style={styles.subTitle}>Iniciar sesión</Text>
 	  <TextInput 
 	  placeholder="introduce@email.com"
@@ -37,7 +39,6 @@ export default function App() {
         title="Contact with Confi"
         onPress={() =>  Linking.openURL(link)}
       />
-	  <AntDesign name="github" size={150} color="pink" />
     </View>
 	</>
   );
