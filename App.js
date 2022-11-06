@@ -21,8 +21,6 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
 	  <Text style={styles.titulo}>CONFI</Text>
-		<AntDesign name="github" size={150} color="pink" />
-
 	  <Text style={styles.subTitle}>Iniciar sesión</Text>
 	  <TextInput 
 	  placeholder="introduce@email.com"
