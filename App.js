@@ -17,17 +17,16 @@ export default function App() {
 		.finally(()=>setloading(false));
 	},[]);
   return (
-	  <>
+
 
     <View style={styles.container}>
       <StatusBar style="auto" />
 	  <Text style={styles.titulo}>CONFI</Text>
-<<<<<<< HEAD
+
 		<AntDesign name="github" size={150} color="pink" />
 		<Image source={logo} style={{ width: 305, height: 159 }} />
 
-=======
->>>>>>> 7dd1bffcced211cd3c5fc25c0496a5bd2ccffe14
+
 	  <Text style={styles.subTitle}>Iniciar sesión</Text>
 	  <TextInput 
 	  placeholder="introduce@email.com"
@@ -45,7 +44,7 @@ export default function App() {
         onPress={() =>  Linking.openURL(link)}
       />
     </View>
-	</>
+
   );
 }
 
