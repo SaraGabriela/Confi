@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
 	marginBottom: 20,
   },
   Button: {
-	padding: 10,
+	padding: 20,
 
   }
   
