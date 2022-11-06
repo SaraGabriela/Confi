@@ -34,7 +34,7 @@ export default function App() {
 
 	  <Button
 
-        title="Contact us"
+        title="Contact with Confi"
         onPress={() =>  Linking.openURL(link)}
       />
 	  <AntDesign name="github" size={150} color="pink" />
