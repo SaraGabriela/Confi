@@ -2,11 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Dimensions } from 'react-native';import { LinearGradient } from 'expo-linear-gradient';
 
 
-export default function Button () {
+export default function Buttonnn () {
   return (
+	<View style={styles.container}>
       <TouchableOpacity style={styles.text}>
+		
 		<Text style={styles.text}>SING IN</Text>
       </TouchableOpacity>
+	  </View>
   );
 }
 

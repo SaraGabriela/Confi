@@ -1,8 +1,8 @@
 import React,{useState, useEffect} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput,} from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Linking } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
-import Button from './components/Button';
+const link = "https://confi-chat.vercel.app/";
 
 export default function App() {
 	const [data, setData] = useState([])
@@ -31,10 +31,13 @@ export default function App() {
 	  style={styles.textInput}
 	  secureTextEntry={true}
 	  />
-	  <Text >¿Olvidaste tu contraseña?</Text>
-	  <Button></Button>
-	  <Text>¿No tienes cuenta?</Text>
-	  <AntDesign name="qrcode" size={150} color="black" />
+
+	  <Button
+
+        title="Contact us"
+        onPress={() =>  Linking.openURL(link)}
+      />
+	  <AntDesign name="github" size={150} color="pink" />
     </View>
 	</>
   );
@@ -43,7 +46,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff8f3',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -63,8 +66,14 @@ const styles = StyleSheet.create({
 	height: 50,
 	marginTop: 20,
 	borderRadius: 30,
-	backgroundColor: 'white',
+	backgroundColor: 'yellow',
+	marginBottom: 20,
+  },
+  Button: {
+	padding: 10,
+
   }
+  
 });
 
 
